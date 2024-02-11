@@ -1,5 +1,9 @@
-import { Button } from './components/ui/button'
+import { Home } from './pages/home/Home'
 
 export default function App() {
-  return <Button variant={'destructive'}>CLick me</Button>
+  return (
+    <div className='flex items-center justify-center h-screen p-4'>
+      <Home />
+    </div>
+  )
 }
