@@ -9,6 +9,7 @@ import {
 import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
+import { Link } from 'react-router-dom'
 
 export function Login() {
   return (
@@ -30,9 +31,12 @@ export function Login() {
         </CardContent>
         <CardFooter className='flex flex-col'>
           <Button className='w-full'>Sign in</Button>
-          <a href='' className='pt-3 mr-auto underline hover:text-blue-800 '>
+          <Link
+            to='/signup'
+            className='pt-3 mr-auto underline hover:text-blue-800 '
+          >
             Don't Have an account?
-          </a>
+          </Link>
         </CardFooter>
       </form>
     </Card>
